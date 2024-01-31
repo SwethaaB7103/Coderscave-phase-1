@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('/content/dataset_tk.csv')
+
+df.head()
+
+df.shape
+
+df['Punjab'].value_counts()
+
+df['Delhi'].value_counts(normalize=True)
+
+df['Haryana'].value_counts(normalize=True)
